@@ -414,3 +414,62 @@ textarea.input{min-height:120px; resize:vertical; grid-column:1 / -1}
   transform: translateY(-50%) translateX(0) rotate(-45deg);
 }
 
+.notice{
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 14px;
+}
+.notice strong{ color: var(--text); }
+
+.kpi-grid{
+  margin-top: 14px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:12px;
+}
+@media (max-width: 900px){
+  .kpi-grid{ grid-template-columns: 1fr; }
+}
+.kpi{
+  border-radius: var(--radius2);
+  padding:16px;
+  border:1px solid rgba(255,255,255,.12);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  transition: transform .22s ease, background .22s ease;
+}
+.kpi:hover{ transform: translateY(-2px); background: rgba(255,255,255,.07); }
+.kpi-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 8px;
+}
+.kpi p{
+  margin:0;
+  color: var(--muted);
+  line-height:1.55;
+  font-size:14px;
+}
+
+/* Proof stamp overlay */
+.proof-media{
+  position:relative;
+}
+.stamp{
+  position:absolute;
+  top:14px;
+  right:14px;
+  padding: 7px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  color: rgba(255,255,255,.85);
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.16);
+  backdrop-filter: blur(10px);
+}
