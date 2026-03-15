@@ -414,16 +414,6 @@ textarea.input{min-height:120px; resize:vertical; grid-column:1 / -1}
   transform: translateY(-50%) translateX(0) rotate(-45deg);
 }
 
-.notice{
-  margin-top: 14px;
-  padding: 12px 14px;
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.05);
-  color: var(--muted);
-  line-height: 1.55;
-  font-size: 14px;
-}
 .notice strong{ color: var(--text); }
 
 .kpi-grid{
