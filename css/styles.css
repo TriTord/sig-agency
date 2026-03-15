@@ -461,15 +461,14 @@ textarea.input{min-height:120px; resize:vertical; grid-column:1 / -1}
 .proof-media{
   position:relative;
 }
-.stamp{
-  position:absolute;
-  top:14px;
-  right:14px;
-  padding: 7px 10px;
-  font-size: 12px;
-  border-radius: 999px;
-  color: rgba(255,255,255,.85);
-  background: rgba(0,0,0,.35);
-  border: 1px solid rgba(255,255,255,.16);
-  backdrop-filter: blur(10px);
+
+.proof-single{
+  margin-top:14px;
+  display:flex;
+  justify-content:center;
+}
+
+.proof-single .proof-card{
+  max-width:720px;
+  width:100%;
 }
