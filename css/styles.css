@@ -469,6 +469,15 @@ textarea.input{min-height:120px; resize:vertical; grid-column:1 / -1}
 }
 
 .proof-single .proof-card{
-  max-width:720px;
+  max-width:560px; /* réduit la taille */
   width:100%;
+}
+
+/* credit instagram */
+
+.proof-credit{
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:6px;
 }
